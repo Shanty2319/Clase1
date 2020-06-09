@@ -1,25 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../PACHAqtec/main.css">
-    <link rel="stylesheet" href="../Clase1/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <header></header>
-    <h1>Lista de Perros</h1>
-    <h3>Las 10 mejores razas</h3>
-    <h2>Pitbull</h2>
-    <h2>Boxer</h2>
-    <h2>Dogo</h2>
-    <p>Para mi estas 3 son las mejores</p>
-
-    <video>
-        <source href="https://youtu.be/FGVhIzsCvtU">
-    Your browser does not support the video tag.
-      </video>
-     
+ <form action="#">
+     <label name="firtsname">
+         Nombre
+         <input type="text" placeholder="Nombre">
+     </label>
+     <label name="lastname">
+        Apellido
+        <input type="text" placeholder="Apellido">
+    </label>
+    <br>
+    <br>
+    <label name="age">
+        Edad
+        <input type="number" placeholder="">
+    </label>
+<br>
+<br>
+        <select name="country" id="">
+            <option value="">Selecciona tu Nacionalidad</option>
+            <option value="1">Peru</option> 
+            <option value="2">Chile</option> 
+            <option value="3">Ecuador</option>
+            <option value="4">Argentina</option>  
+        </select>
+        <select name="distric" id="">
+            <option value="">Selecciona tu Distrito</option>
+            <option value="1">Chorrillos</option> 
+            <option value="2">Surquillo</option> 
+            <option value="3">Los Olivos</option>
+            <option value="4">San Borja</option>  
+        </select>
+        <br>
+        <br>
+        <label name="cellphone">
+            Celular
+            <input type="tel" placeholder="Celular">
+        </label>
+        <label name="email">
+            Correo
+            <input type="email" placeholder="Correo Electronico">
+        </label>
+        <br><br>
+        <label name="sex">
+            Masculino
+            <input name="sex" type="radio" checked>
+        </label>
+        <label name="sex">
+            Femenino
+            <input name="sex" type="radio">
+        </label>
+        <br><br>
+        <label name="artist-favorite">
+            Artista Favorito
+            <input type="text" placeholder="Artista Favorito">
+        </label>
+        <br><br>
+        <label>Tienes mascotas?</label>
+        <br>
+        <label name="mascot">
+            Si
+            <input name="yesornot" type="radio">
+            No
+            <input name="yesornot" type="radio">
+        </label>
+        <br><br>
+        <label>Comentarios</label>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+ </form>
 </body>
 </html>
