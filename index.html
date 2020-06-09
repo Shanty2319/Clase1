@@ -7,19 +7,19 @@
 </head>
 <body>
  <form action="#">
-     <label name="firtsname">
+     <label>
          Nombre
-         <input type="text" placeholder="Nombre">
+         <input name="firstname" type="text" placeholder="Nombre">
      </label>
-     <label name="lastname">
+     <label>
         Apellido
-        <input type="text" placeholder="Apellido">
+        <input name="lastname" type="text" placeholder="Apellido">
     </label>
     <br>
     <br>
-    <label name="age">
+    <label>
         Edad
-        <input type="number" placeholder="">
+        <input name="age" type="number" placeholder="">
     </label>
 <br>
 <br>
@@ -39,32 +39,32 @@
         </select>
         <br>
         <br>
-        <label name="cellphone">
+        <label>
             Celular
-            <input type="tel" placeholder="Celular">
+            <input name="cellphone" type="tel" placeholder="Celular">
         </label>
-        <label name="email">
+        <label>
             Correo
-            <input type="email" placeholder="Correo Electronico">
+            <input name="email" type="email" placeholder="Correo Electronico">
         </label>
         <br><br>
-        <label name="sex">
+        <label>
             Masculino
-            <input name="sex" type="radio" checked>
+            <input name="sex" name="sex" type="radio" checked>
         </label>
-        <label name="sex">
+        <label>
             Femenino
-            <input name="sex" type="radio">
+            <input name="sex" name="sex" type="radio">
         </label>
         <br><br>
-        <label name="artist-favorite">
+        <label>
             Artista Favorito
-            <input type="text" placeholder="Artista Favorito">
+            <input name="artist-favorite" type="text" placeholder="Artista Favorito">
         </label>
         <br><br>
         <label>Tienes mascotas?</label>
         <br>
-        <label name="mascot">
+        <label>
             Si
             <input name="yesornot" type="radio">
             No
@@ -74,6 +74,8 @@
         <label>Comentarios</label>
         <br>
         <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <button>Enviar</button>
  </form>
 </body>
 </html>
