@@ -6,74 +6,97 @@
     <title>Formulario</title>
 </head>
 <body>
+    <h1>Formulario</h1>
+    <style>
+        input {
+        padding: 10px ; 
+        transition: all .5s ease;
+        border: 1px solid #cdcdcd;
+        }
+        input:focus {
+        outline: none;
+        box-shadow: 0 0 10px #cdcdcd;
+        }
+        select {
+        padding: 10px ; 
+        transition: all .5s ease;
+        border: 1px solid #cdcdcd;
+        }
+        select:focus {
+        outline: none;
+        box-shadow: 0 0 10px #cdcdcd;
+        }
+        textarea {
+            padding: 10px ; 
+        transition: all .5s ease;
+        border: 1px solid #cdcdcd;
+        }
+        textarea:focus {
+            outline: none;
+        box-shadow: 0 0 10px #cdcdcd;
+        }
+
+    </style>
  <form action="#">
-     <label>
-         Nombre
-         <input name="firstname" type="text" placeholder="Nombre">
+     <label> 
+         <input name="firstname" type="text" placeholder="Nombre" required>
      </label>
+     <br><br>
      <label>
-        Apellido
-        <input name="lastname" type="text" placeholder="Apellido">
+        <input name="lastname" type="text" placeholder="Apellido" required>
     </label>
     <br>
     <br>
     <label>
-        Edad
-        <input name="age" type="number" placeholder="">
+        <input name="age" type="number" placeholder="Edad" required>
     </label>
-<br>
-<br>
-        <select name="country" id="">
+        <br>
+        <br>
+        <label>
+            <input name="email" type="email" placeholder="Correo Electronico" required>
+        </label>
+        <br><br>
+        <select name="country" id="" required>
             <option value="">Selecciona tu Nacionalidad</option>
             <option value="1">Peru</option> 
             <option value="2">Chile</option> 
             <option value="3">Ecuador</option>
             <option value="4">Argentina</option>  
         </select>
-        <select name="distric" id="">
+        <br><br>
+        <select name="distric" id="" required>
             <option value="">Selecciona tu Distrito</option>
             <option value="1">Chorrillos</option> 
             <option value="2">Surquillo</option> 
             <option value="3">Los Olivos</option>
             <option value="4">San Borja</option>  
         </select>
-        <br>
-        <br>
-        <label>
-            Celular
-            <input name="cellphone" type="tel" placeholder="Celular">
-        </label>
-        <label>
-            Correo
-            <input name="email" type="email" placeholder="Correo Electronico">
-        </label>
         <br><br>
+        <label> <strong>Sexo</strong></label>
+        <br>
         <label>
             Masculino
-            <input name="sex" name="sex" type="radio" checked>
+            <input name="sex" name="sex" type="radio" required>
         </label>
         <label>
             Femenino
-            <input name="sex" name="sex" type="radio">
+            <input name="sex" name="sex" type="radio" required>
         </label>
         <br><br>
-        <label>
-            Artista Favorito
-            <input name="artist-favorite" type="text" placeholder="Artista Favorito">
-        </label>
-        <br><br>
-        <label>Tienes mascotas?</label>
+        <label> <strong>Hobbies</strong> </label>
         <br>
         <label>
-            Si
-            <input name="yesornot" type="radio">
-            No
-            <input name="yesornot" type="radio">
+        Basquet
+            <input name="hobbies" type="checkbox">
+        Futbol
+            <input name="hobbies" type="checkbox">
+        Tenis
+        <input name="hobbies" type="checkbox">
         </label>
         <br><br>
-        <label>Comentarios</label>
+        <label> <strong>Comentarios</strong> </label>
         <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="10" required></textarea>
         <br><br>
         <button>Enviar</button>
  </form>
