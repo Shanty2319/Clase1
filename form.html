@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto3HKTON</title>
+    <style>
+        input:required {
+        border: 1px solid rgb(117, 91, 4);
+        border-radius: 100px;
+        }
+
+
+        input:invalid {
+        background-color:khaki;
+        }
+
+        input:focus {
+        background: rgb(230, 162, 36);
+        }
+        div{
+            margin-bottom: 20px;
+        }
+
+        main form{
+            width: 100%;
+            max-width: 500px;
+            background-color: rgba(194, 166, 11, 0.849);
+            margin: auto;
+            margin-top: 80px;
+            border-radius: 5%;
+            border: solid 3px ;
+            padding: 2px;
+        }
+        form h1{
+            text-align: center;
+            margin: 30px;
+            margin-bottom: 30px;
+        }
+        form div{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+        form div label{
+            width: 20% ;
+            font-family: Arial, Helvetica, sans-serif ;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 5px;
+        }
+        form div input{
+            width: 40%;
+            padding: 5px;
+        }
+        button{
+            padding: 8px;
+            font-size: 15px;
+            margin-top: 10px;
+            border-radius: 100px;
+            background-color: khaki;
+            margin-block-end: 3%;
+            
+        }
+        .edad1 {
+            width: 10%;
+        }
+        .sex1 {
+         width: 90px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="#">
+        <h1>Validación de Formulario</h1>
+        <div>
+          <input name="nombre" id="name" type="text" placeholder="Nombre" pattern="[A-Za-z ]+" required/>
+        </div>
+        <div>
+          <input name="apellido" id="lastname" type="text" placeholder="Apellido" pattern="[A-Za-z ]+" required/>
+        </div>
+        <div>
+          <input class="edad1" name="edad" id="age" type="number" placeholder="Edad" min="18" max="80" required />
+        </div>
+          <div> 
+            <label>
+                Femenino
+              <input class="sex1" type="radio" name="sex" checked />
+            </label>
+            <label>
+                Masculino
+              <input class="sex1" type="radio" name="sex" />
+            </label>
+          </div>
+        <div>
+          <input name="DNI" id="DNI" type="texto" placeholder="DNI" pattern="[A-Za-z0-9 ]+" minlength="8" maxlength="8" required/>
+        </div>
+        <div>
+          <input name="mail" id="email" type="email" placeholder="Correo" required/>
+        </div>
+        <div>
+          <button>Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
