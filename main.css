@@ -1,0 +1,28 @@
+.contaniner {
+    width: 400px;
+    margin: 0 auto;
+}
+.header {
+    height: 100px;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+.titulo {
+    padding-top: 30px;
+    font-size: 30px;
+}
+.box1 {
+    background-color: blue;
+}
+.box2 {
+ background-color: chocolate;
+ }
+ 
+.footer {
+        background-color: red;
+        color: white;
+        height: 100px;
+        font-size: 20px;
+        text-align: center;
+    }
